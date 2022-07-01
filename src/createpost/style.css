@@ -1,5 +1,8 @@
 .createPost{
-    border: 2px red solid;
+    /* border: 2px red solid; */
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
     border-radius: 10px;
     background-color: rgb(219, 220, 220);
     width: 600px;

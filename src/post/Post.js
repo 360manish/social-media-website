@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useAuth } from "../context/AuthContex";
 import { Button } from "react-bootstrap";
 import Comment from "../comments/Comment";
-import {getStorage , ref , uploadBytes , getDownloadURL,deleteObject} from "firebase/storage"
+import {getStorage , ref ,deleteObject} from "firebase/storage"
 import { db } from "../firebase";
 import "./style.css";
 import CommentInput from "../commentInput/CommentInput";
@@ -35,10 +35,10 @@ export default function Post({ photoUrl,photoName, username, id, caption, commen
                 <div>
                     <p style={{ marginLeft: "8px" }}>{username}</p>
                 </div>
-                <Button className='post_button' onClick={deletePost}>Delete</Button>
+                {currentUser.email.replace("@gmail.com","")===username?<Button className='post_button' onClick={deletePost}>Delete</Button>:<></>}
             </div>
             <div className="post_center">
-                <img src={photoUrl} className='post_photoUrl'></img>
+                <img src={photoUrl} className='post_photoUrl' alt="there is some problem"></img>
             </div>
             <div>
                 <p>
@@ -46,8 +46,9 @@ export default function Post({ photoUrl,photoName, username, id, caption, commen
                     {caption}
                 </p>
             </div>
-            {comments ? comments.map((comment) => <Comment username={comment.username} caption={comment.comment}/>): (<></>)}
             <CommentInput comment={comments} id={id}/>
+            {/* {comments ? comments.map((comment) => <Comment username={comment.username} caption={comment.comment}/>): (<></>)} */}
+           
 
         </div>
     );
