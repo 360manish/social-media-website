@@ -1,0 +1,32 @@
+.createPost{
+    border: 2px red solid;
+    border-radius: 10px;
+    background-color: rgb(219, 220, 220);
+    width: 600px;
+}
+.createPost_imageUpload > input{
+    display: none;
+    background-color: white;
+}
+.createPost_uploadBtn{
+    margin-left: auto;
+    border:none;
+    background-color: white;
+}
+.createPost_Bottom{
+    display: flex;
+}
+.createPost_textarea{
+    background-color: rgb(219, 220, 220);
+    border:none;
+    width: 100%;
+}
+.createPost_textarea :focus{
+    outline:none;
+}
+#image-preview{
+    display: none;
+    height: 120px;
+    margin: 12px 2px;
+    border-radius: 5px;
+}

@@ -1,0 +1,26 @@
+.post{
+    width: 60vw;
+    border: 1px red solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 24px;
+    align-items: center;
+}
+.post_header{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.post_button{
+    margin-left: 0px 0px;
+    cursor: pointer;
+}
+.post_button:focus{
+    outline: none;
+}
+.post_photoUrl{
+    width: 100%;
+    margin:4px 4px;
+    object-fit: cover;
+}
