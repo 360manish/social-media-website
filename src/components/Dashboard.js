@@ -38,10 +38,8 @@ export default function Dashboard() {
         </Button>
       </div>*/}
       {/* <UserNavbar/> */}
-      <div> 
-        <CreatePost/>
+        {/* <Link to=''>Create new post</Link> */}
         <Feed/>
-      </div>
     </div>
   );
 }

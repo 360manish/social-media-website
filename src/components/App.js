@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
 import UserNavbar from "./Navbar";
+import Createpost from "../createpost/Createpost";
 
 function App() {
   return(
@@ -24,6 +25,7 @@ function App() {
             <Route exact path='/'  element={<PrivateRoute><Dashboard/></PrivateRoute>}/>
             <Route exact path='/update-profile'  element={<PrivateRoute><UpdateProfile/></PrivateRoute>}/>
             <Route exact path="/signup" element={<Signup/>} />
+            <Route exact path="/create-post" element={<Createpost/>} />
             <Route exact path="login" element={<Login/>}/>
             <Route exact path="/forgot-password" element={<ForgotPassword/>}/>
           </Routes>

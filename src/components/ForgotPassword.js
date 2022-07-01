@@ -34,7 +34,7 @@ export default function Login() {
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
-            <Button className="w-100" type="submit">
+            <Button className="my-4 w-100" type="submit">
                 Reset Password
             </Button>
           </Form>
